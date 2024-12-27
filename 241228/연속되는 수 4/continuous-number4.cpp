@@ -11,12 +11,12 @@ int calcLongestSequence(int k){
 
     for(int i=k;i<v.size();i++){
         if(v[i]==prev)
-            return length;
+            break;
 
         length++;
         prev = v[i];
     }
-    
+
     return length;
 }
 
@@ -29,8 +29,6 @@ int main() {
         cin>> a;
         v.push_back(a);
     }
-
-    sort(v.begin(), v.end(), less<int>());
 
     int result=0;
     for(int i=0; i<v.size();i++)
