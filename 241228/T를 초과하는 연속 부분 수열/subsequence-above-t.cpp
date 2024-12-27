@@ -15,7 +15,7 @@ int main() {
     
     int prev=0, length=0, result=0;
     for(int i=0;i<v.size();i++){  
-        if(v[i]>t && prev<=v[i]) {
+        if(v[i]>t) {
             length++;
             result = max(result, length);
             prev = v[i];
