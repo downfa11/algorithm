@@ -10,13 +10,12 @@ int calcLongestSequence(int k){
     int prev=0, length=0;
 
     for(int i=k;i<v.size();i++){
-        if(v[i]==prev)
+        if(v[i]<=prev)
             break;
 
         length++;
         prev = v[i];
     }
-
     return length;
 }
 
