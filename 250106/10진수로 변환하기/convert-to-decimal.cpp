@@ -12,8 +12,6 @@ int main() {
     for(int i=0; i<s.size(); i++){
         int a = s[i]-'0';
         value += a * pow(2, s.size()-1-i);
-
-        cout << value << endl;
     }
 
     cout << value;
