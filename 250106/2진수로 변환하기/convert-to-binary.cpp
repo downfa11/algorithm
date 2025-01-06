@@ -9,6 +9,10 @@ int main() {
 
     vector<int> v;
 
+    if(n==0) {
+        cout << 0; return 0;
+    }
+    
     while(n>0){
         v.push_back(n%2);
         n/=2;
