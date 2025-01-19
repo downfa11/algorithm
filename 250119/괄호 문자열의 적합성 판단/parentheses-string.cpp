@@ -12,7 +12,7 @@ bool isCorrect(string value){
             s.push(value[i]);
         } else if(value[i]==')' && !s.empty()){
             s.pop();
-        }
+        } else return false;
     }
 
 
